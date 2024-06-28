@@ -5,19 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MS1 Subscribe form</title>
     <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="../styles/subscribe.css">
 </head>
 <body>
     <div class="bigBox">
         <div class="container">
             <div class="header">
-                <div><a href="../index.html">Home</a></div>
+                <div><a href="../index.html">Home (real link)</a></div>
                 <div><h1>To Became a Runner</h1></div>
                 <div><a href="#">🔎</a></div>
             </div>
-
-            <div class="form-div">
-                <form>
-                    <h2>Vem correr com a gente</h2>
+            <div>
+                <h2>Vem correr com a gente</h2><br/>
+                <form class="form">
                     <div class="inputs">
                         <div class="input_text">
                             <label for="user_name">Nome:</label>
@@ -35,8 +35,6 @@
                             <label for="celular">Celular:</label>
                             <input id="celular" name="celular" type="tel" placeholder="digite seu celular aqui" size="20">
                         </div>
-                        <br />
-                        <br />
                         <fieldset>
                             <legend>Informe seu gênero:</legend>
                             <input type="radio" id="masc" name="genero" value="masc">
@@ -48,7 +46,6 @@
                             <input type="radio" id="outro_genero" name="genero" value="outro">
                             <label for="outro"> <input type="text" id="user_genero" placeholder="Outro" name="user_genero"></label>
                         </fieldset>
-                        <br>
                         <fieldset>
                             <legend>Hobbies (usar checkbox):</legend>
                             <input type="checkbox" id="corrida" name="hobby" value="corrida">
@@ -64,14 +61,14 @@
                             <label for="outro_hobby"> <input type="text" id="user_hobby" placeholder="Digite seu outro hobby aqui" name="user_hobby"></label>
                         </fieldset>
                     </div>
-                    <div>
+                    <div class="text-area">
                         <h2>De uma forma geral e descontraída, descreva o que você procura:</h2>
                         <label for="user_words">solte a imaginação no seu teclado:</label>
                         <br />
-                        <textarea name="user_words" id="user_words" rows="10" cols="70">Neste trabalho eu busco... </textarea>
+                        <textarea name="user_words" id="user_words" rows="10" cols="70">Nesta atividade eu busco... </textarea>
                     </div>
                     
-                    <div>
+                    <div class="values">
                         <h2>Vamos falar de valores:</h2>
                 
                         <label for="user_values">Escolha só uma opção:</label>

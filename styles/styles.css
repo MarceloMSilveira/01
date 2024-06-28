@@ -106,3 +106,7 @@ h2{
 .fog-type{
     color: turquoise;
 }
+
+.header > div {
+    display: flex;
+}
