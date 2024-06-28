@@ -1,0 +1,133 @@
+.bigBox{
+    height: 98vh;
+    width: 98vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: aqua; */
+}
+.container{
+    height: 98%;
+    width: 98%;
+    display: grid;
+    background-color: white;
+    grid-template-rows: 50px 1fr 60px;
+    grid-template-columns: 90%;
+    justify-content: center;
+}
+.chiador-main{
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid; */
+}
+
+.chiador-content{
+    /* border: 1px solid; */
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    height: 90vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.chiador-side{
+    /* border: 1px solid red; */
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 30% 25% 25%;
+    /* padding: 15px;  */
+    gap: 30px;
+}
+
+.chiador-side > div {
+    padding: 15px;
+}
+
+.chiador-side > div:nth-of-type(2) > div {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    align-items: center;
+}
+.chiador-side p {
+    /* background-color: lightgrey;
+    overflow: hidden; */
+}
+
+.chiador-side div:first-child {
+    /* border: 1px solid red; */
+    height: 100%;
+    overflow: hidden;
+    background-color: #EEEDEB;
+}
+
+.chiador-content span {
+    color: gray;
+}
+
+.chiador-content > p:nth-of-type(3) {
+    border: 1px solid;
+}
+
+p.border{
+    padding: 10px;
+}
+
+.chiador-side h3 {
+    font-style: italic;
+}
+
+button{
+    border-radius: 20px;
+    padding: 5px;
+    background-color: white;
+}
+button:nth-of-type(1){
+    color: #80C4E9;
+    border-color: #80C4E9;
+}
+button:nth-of-type(1):hover{
+    color: #687EFF;
+    border-color: #687EFF;
+    cursor: pointer;
+}
+button:nth-of-type(2){
+    color: #C7C8CC;
+    border-color: #C7C8CC;
+}
+figure {
+    border: thin #c0c0c0 solid;
+    display: flex;
+    flex-flow: column;
+    padding: 5px;
+    max-width: 220px;
+    margin: auto;
+}
+  
+img {
+    max-width: 220px;
+    max-height: 150px;
+}
+  
+figcaption {
+    background-color: #222;
+    color: #fff;
+    font: italic smaller sans-serif;
+    padding: 3px;
+    text-align: center;
+}
+
+.figures-box {
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(220px,1fr));
+}
+  
+@media (min-width:600px){
+    .chiador-main{
+        display: grid;
+        grid-template-columns: 70% 1fr;
+        grid-template-rows: 100%;
+        /* border: 1px solid; */
+    }   
+}
