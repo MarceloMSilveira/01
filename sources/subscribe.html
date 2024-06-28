@@ -4,22 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MS1 Subscribe form</title>
-    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="../styles/styles.css">
 </head>
 <body>
     <div class="bigBox">
         <div class="container">
             <div class="header">
-                <div><a href="./index.html">Home</a></div>
+                <div><a href="../index.html">Home</a></div>
                 <div><h1>To Became a Runner</h1></div>
                 <div><a href="#">🔎</a></div>
             </div>
 
             <div class="form-div">
                 <form>
-                    <h1>Forms practice</h1>
+                    <h2>Vem correr com a gente</h2>
                     <div class="inputs">
-                        <h2>Inputs (text, button, email, radio, celphone...)</h2>
                         <div class="input_text">
                             <label for="user_name">Nome:</label>
                             <input id="user_name" name="user_name" type="text" placeholder="digite seu nome aqui" size="20">
@@ -65,31 +64,36 @@
                             <label for="outro_hobby"> <input type="text" id="user_hobby" placeholder="Digite seu outro hobby aqui" name="user_hobby"></label>
                         </fieldset>
                     </div>
+                    <div>
+                        <h2>De uma forma geral e descontraída, descreva o que você procura:</h2>
+                        <label for="user_words">solte a imaginação no seu teclado:</label>
+                        <br />
+                        <textarea name="user_words" id="user_words" rows="10" cols="70">Neste trabalho eu busco... </textarea>
+                    </div>
                     
-                    <h2>Textarea</h2>
-                    <h3>De uma forma geral e descontraída, descreva o que você procura:</h3>
-                    <label for="user_words">solte a imaginação no seu teclado:</label>
-                    <br />
-                    <textarea name="user_words" id="user_words" rows="10" cols="70">Neste trabalho eu busco... </textarea>
-                    <h2>Selects (dropdowns)</h2>
-            
-                    <label for="user_values">Escolha só uma opção:</label>
-                    <br />
-                    <select name="valores" id="user_values">
-                        <option value="">O que mais importa pra você?</option>
-                        <option value="vida">vida</option>
-                        <option value="amor">amor</option>
-                        <option value="sexo">sexo</option>
-                        <option value="dinheiro">dinheiro</option>
-                        <option value="viagens">viagens</option>
-                        <option value="saude">saude</option>
-                        <option value="comida">comida</option>
-                        <option value="arte">arte</option>
-                    </select>
-                    <br />
-                    <br />
-                    <br />
-                    <input type="submit" value="Enviar">
+                    <div>
+                        <h2>Vamos falar de valores:</h2>
+                
+                        <label for="user_values">Escolha só uma opção:</label>
+                        <br />
+                        <select name="valores" id="user_values">
+                            <option value="">O que mais importa pra você?</option>
+                            <option value="vida">vida</option>
+                            <option value="amor">amor</option>
+                            <option value="sexo">sexo</option>
+                            <option value="dinheiro">dinheiro</option>
+                            <option value="viagens">viagens</option>
+                            <option value="saude">saude</option>
+                            <option value="comida">comida</option>
+                            <option value="arte">arte</option>
+                        </select>
+                        <br />
+                        <br />
+                        <br />
+                    </div>
+                    <div>
+                        <input type="submit" value="Enviar">
+                    </div>
                 </form>      
             </div>
 
